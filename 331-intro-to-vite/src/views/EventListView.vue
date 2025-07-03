@@ -44,7 +44,7 @@ import axios from 'axios'
 const events = ref<Event[]>();
 
 onMounted(() =>{
-  axios.get<Event[]>('https://my-json-server.typicode.com/Thippharake-NaChiengmai/lab02-db.json/events')
+  axios.get<Event[]>('https://my-json-server.typicode.com/Thanathorn31/Lab02_compo/events')
     .then(response => {
       events.value = response.data;
     })
