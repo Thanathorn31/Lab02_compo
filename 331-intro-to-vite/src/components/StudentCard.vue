@@ -15,10 +15,20 @@ defineProps<{
 
 <style scoped>
 .student-card {
-  border: 1px solid #f63030;
-  padding: 16px;
-  margin-bottom: 16px;
-  width: 300px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 320px;
   text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: 'Segoe UI', sans-serif;
 }
+.student-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
 </style>
