@@ -32,6 +32,19 @@
       "time": "11:00",
       "petsAllowed": false,
       "organizer": "Carey Wales"
+    },
+    {
+      "id": 662115021,
+      "category": "education",
+      "title": "Vue Workshop SE331",
+      "description": "Lab 14.5 test add event",
+      "location": "Chiang Mai University",
+      "date": "August 2, 2025",
+      "time": "14:00",
+      "petsAllowed": false,
+      "organizer": "Thanathorn"
     }
+
+
   ]
 }
