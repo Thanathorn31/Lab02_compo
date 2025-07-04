@@ -65,17 +65,60 @@ onMounted(() =>{
   </div>
 </template>
 
-<style scoped>
+
+  <!-- /* .events-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .event {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 320px;
+  } */ -->
+
+   <style scoped>
 .events-wrapper {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   align-items: center;
+  padding: 2rem;
+  background-color: #f9fafb;
 }
+
 .event {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  width: 320px;
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.event h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  color: #1f2937;
+}
+
+.event p {
+  margin: 0;
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 </style>
+
+

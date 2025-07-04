@@ -19,7 +19,6 @@ import type { Event } from '@/types';
 
 <template>
   
-  <div class="event-class"></div>
   <div class="event-class">
     <div class="event-card">
       <h2>{{ event.title }}</h2>
@@ -32,14 +31,37 @@ import type { Event } from '@/types';
 <style scoped>
 .event-card {
   padding: 20px;
-  width: 250px;
+  width: 100%;
+  max-width: 300px;
   cursor: pointer;
-  border: 1px solid #39495c;
+  border: 1px solid #e5e7eb; 
+  border-radius: 12px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
 }
 
 .event-card:hover {
-  transform: scale(1.01);
-  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2); 
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); 
+  border-color: #94a3b8; 
 }
+
+
+.event-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #111827;
+}
+
+.event-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
 </style>
