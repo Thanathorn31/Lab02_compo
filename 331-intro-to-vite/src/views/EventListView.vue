@@ -1,7 +1,7 @@
 
 <script setup lang="ts">
 import EventCard from '@/components/EventCard.vue';
-import  EventCategory from '@/components/EventCategory.vue';
+// import  EventCategory from '@/components/EventCategory.vue';
 import type { Event } from '@/types';
 import { ref, onMounted } from 'vue';
 import EventService from '@/services/EventService';
@@ -61,7 +61,7 @@ onMounted(() =>{
   
   <div class="events">
     <EventCard v-for="event in events" :key="event.id" :event="event" />
-    <EventCategory v-for="event in events" :key="event.id" :event="event" />
+    <!-- <EventCategory v-for="event in events" :key="event.id" :event="event" /> -->
   </div>
 </template>
 
@@ -80,26 +80,38 @@ onMounted(() =>{
   } */ -->
 
    <style scoped>
-.events-wrapper {
+
+.event-class {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  justify-content: center;
   align-items: center;
-  padding: 2rem;
-  background-color: #f9fafb;
+}
+
+/* .events-wrapper {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 320px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: 'Segoe UI', sans-serif;
+  
 }
 
 .event {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  width: 100%;
-  max-width: 400px;
   background-color: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 1.5rem;
-  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 320px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .event:hover {
@@ -118,7 +130,7 @@ onMounted(() =>{
   color: #4b5563;
   font-size: 1rem;
   line-height: 1.5;
-}
+} */
 </style>
 
 
